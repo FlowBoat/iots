@@ -43,6 +43,8 @@ for _ in range(1000):
     num = random.random() * 100
     var = Variable(torch.Tensor([[[[num, num], [num, num]]]]))
     target = Variable(torch.Tensor([num]))
+    print(target)
+    print(var)
     learn(var, target)
     print(float(out))
 
