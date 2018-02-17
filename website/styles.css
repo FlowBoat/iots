@@ -92,7 +92,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 @media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
 @media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}}
 .w3-top,.w3-bottom{position:fixed;width:100%;z-index:1}.w3-top{top:0}.w3-bottom{bottom:0}
-.w3-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.w3-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.3);z-index:2}
 .w3-display-topleft{position:absolute;left:0;top:0}.w3-display-topright{position:absolute;right:0;top:0}
 .w3-display-bottomleft{position:absolute;left:0;bottom:0}.w3-display-bottomright{position:absolute;right:0;bottom:0}
 .w3-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
@@ -167,7 +167,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-teal,.w3-hover-teal:hover{color:#fff!important;background-color:#009688!important}
 .w3-yellow,.w3-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
 .w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
-.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:rgba(10,10,10,0.5)!important}
 .w3-grey,.w3-hover-grey:hover,.w3-gray,.w3-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
 .w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
 .w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
@@ -240,7 +240,6 @@ body, html {
 }
 
 .parallax {
-    background-image: url("lightning.jpg");
     height: 100%;
     width:100%;
 
@@ -248,30 +247,33 @@ body, html {
     background-position: center;
     /*background-repeat: no-repeat;*/
     background-size: cover;
+    background-image: url("lightning.jpg");
 
 }
 
-/* body { */
-    /* background-color:rgba(20,20,20,0); */
-    /* color:white; */
-/* } */
+body {
+    background-color:"#33ccff";
+}
 
 #sloganthing {
     font-family:Arial;
     font-size:4.5em;
-    margin-top:auto;
-    /* margin-bottom:24%; */
     color:white;
+
+    position:relative;
+    top:46%;
+    left:5%;
+
 }
 
 .slogandiv {
-    white-space:nowrap;
+    /* white-space:nowrap; */
 }
 
-#peoplestuff {
-
-}
-
-#almosteverything {
-    opacity:0.5;
+.almosteverything {
+    /* background-color:black; */
+    background:rgba(10, 10, 10, 0.5);
+    opacity:30%;
+    color:white;
+    margin-top:45%;
 }
