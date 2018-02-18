@@ -264,7 +264,7 @@ body, html {
     white-space:nowrap;
     font-family:"Courier";
     font-size:4.0em;
-    color:lightgrey;
+    color:rgba(230,230,230,255);
 
     position:relative;
     top:46%;
